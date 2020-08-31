@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        .titulo-class{
+            padding-left: 122px;
+            padding-right: 120px;
+        }
         .titulo{
-            padding-left: 422px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 382px;
+
+
+
             background-color:#2B38C2;
             border-radius: 20px;
+
+
+
+            padding:15px;
+            text-align:center;
         }
+
         .testo-explicao{
-            padding-left: 422px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 382px;
+            padding-left: 222px;
+
             background-color:2B38C2
         }
         .anuncio{
@@ -36,85 +43,98 @@
         h1{
             color:#AFB3DB
         }
-
+        .main {
+            float:left;
+            width:60%;
+            padding:0 20px;
+        }
+        @media only screen and (max-width:620px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width:100%;
+            }
+        }
     </style>
     <title>Automatizando</title>
 </head>
 <body>
-    <h1 class="titulo">Automatizando tarefas chatas em python</h1>
+    <div class="">
+        <h1 class="titulo">Automatizando tarefas chatas em python</h1>
+      </div>
+    <div class="main">
 
-
-    <div class="testo-explicao">
-        <p>Vamos imaginar temos uma tarefa chata de escrever uma pagina com essas informações</p>
-        <p>Por exemplo, você esta construindo uma pagina para divulgar um evento</p>
-        <p>e alguém te da uma planilha com todos os palestrantes e sua informações</p>
-        <p>então você pensa, isso esta ficando maçante então posso automatizar</p>
-        <p>estou aqui para te dar uma mão ou melhor um norte!</p>
-    </div>
-    <div class="testo-explicao">
-        <p>Nesse caso temos uma planilha com nossos dados, chamadas <strong>dados_teste.xlsx </strong></p>
-        <p>e usaremos a biblioteca <a target="_blank" href="https://pandas.pydata.org/pandas-docs/version/0.25.3/getting_started/10min.html">pandas</a></p>
-    </div>
-    <div style="padding-left:300px;">
-        <img src="./img/exel_dados.png" width="900px" alt="dados base em formato exel">
-    </div>
-    <div class="testo-explicao">
-        <p>agora consumiremos essa base com o comandado </p>
-        <img src="img/trecho_do_codigo_python.png" alt="">
-        <p>vai barregar dados as informações na variável df<strong>df</strong></p>
-    </div>
-
-    <div class="testo-explicao">
-        <p>pegamos um html base como esta, no meu caso um card do bootstrap</p>
-        <img src="img/html_base.png" alt="html base">
-        <p>a onde temos que poder o texto dados que pegaremos do Excel colocamos os sinal <strong>{}</strong></p>
-    </div>
-
-    <div class="testo-explicao">
-        <p>e com esse trecho de código</p>
-        <img src="img/for_que_monta_o_nosso_html.png"html base">
-        <p>nos respectivos <strong>{}</strong> acima, coloque  o respectivas informações</p>
-        <p>cada volta do meu <strong>i</strong> vai ser um registro da minha tabela</p>
-        <p>e cada posição do meu dicionario <strong>[]</strong> vai ser respectivos as minhas colunas</p>
-        <p>da tabela</p>
-    </div>
-
-    <div class="testo-explicao">
-        <p>saída no terminal foi mais ou menos assim</p>
-        <img src="img/terminal_pagina_gerada.png" alt="">
-        <p>bom de um ctrl+c no terminal de ctrl+v no seu html e veja o resultado</p>
-    </div>
-
-    <div class="testo-explicao">
-        <p>se quiser dar uma olhada no código que eu fiz</p>
-        <p>olhe no meu github</p>
-        <a href="https://github.com/GustavoGarciaPereira/automacao-em-pyhton/tree/master/exemplo" target="_blank" rel="noopener noreferrer">Link aqui</a>
-    </div>
-
-
-    <div class="testo-explicao">
-        <p>págima texte gerada <a href="teste.html" target="_blank" rel="noopener noreferrer">aqui</a></p>
-    </div>
-
-
-    <div class="testo-explicao">
-        <h3>Algumas consideração</h3>
-        <p>Claro que não vai ser gerado um html perfeito</p>
-        <p>mas no meu caso me ajudou a dar uma baita ajuda</p>
-        <p>depois só fui ajustando o html para deixar melhor e dar um acabamento</p>
-        <p>se quiser ler mais sobre o assunto, entre no linke do livro abaixo</p>
-        <p>ele da vários insights sobre como usar o python para automatizar tarefas simples! </p>
-        <br>
-        <br>
-        <p>espero que tenha gostado e vou melhor mais no próximo</p>
-        
-    </div>
+        <div class="testo-explicao">
+            <p>Vamos imaginar temos uma tarefa chata de escrever uma pagina com essas informações</p>
+            <p>Por exemplo, você esta construindo uma pagina para divulgar um evento</p>
+            <p>e alguém te da uma planilha com todos os palestrantes e sua informações</p>
+            <p>então você pensa, isso esta ficando maçante então posso automatizar</p>
+            <p>estou aqui para te dar uma mão ou melhor um norte!</p>
+        </div>
+        <div class="testo-explicao">
+            <p>Nesse caso temos uma planilha com nossos dados, chamadas <strong>dados_teste.xlsx </strong></p>
+            <p>e usaremos a biblioteca <a target="_blank" href="https://pandas.pydata.org/pandas-docs/version/0.25.3/getting_started/10min.html">pandas</a></p>
+        </div>
+        <div style="padding-left:200px;">
+            <img src="./img/exel_dados.png" width="900px" alt="dados base em formato exel">
+        </div>
+        <div class="testo-explicao">
+            <p>agora consumiremos essa base com o comandado </p>
+            <img src="img/trecho_do_codigo_python.png" alt="">
+            <p>vai barregar dados as informações na variável df<strong>df</strong></p>
+        </div>
     
-
-    <div class="anuncio">
-        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=gustavo12garc-20&marketplace=amazon&region=BR&placement=B075JTQYB7&asins=B075JTQYB7&linkId=e7315b4aec20b9242f4564501272709a&show_border=true&link_opens_in_new_window=true&price_color=344ee0&title_color=1d2e1c&bg_color=ffffff">
-        </iframe>
+        <div class="testo-explicao">
+            <p>pegamos um html base como esta, no meu caso um card do bootstrap</p>
+            <img src="img/html_base.png" alt="html base">
+            <p>a onde temos que poder o texto dados que pegaremos do Excel colocamos os sinal <strong>{}</strong></p>
+        </div>
+    
+        <div class="testo-explicao">
+            <p>e com esse trecho de código</p>
+            <img src="img/for_que_monta_o_nosso_html.png"html base">
+            <p>nos respectivos <strong>{}</strong> acima, coloque  o respectivas informações</p>
+            <p>cada volta do meu <strong>i</strong> vai ser um registro da minha tabela</p>
+            <p>e cada posição do meu dicionario <strong>[]</strong> vai ser respectivos as minhas colunas</p>
+            <p>da tabela</p>
+        </div>
+    
+        <div class="testo-explicao">
+            <p>saída no terminal foi mais ou menos assim</p>
+            <img src="img/terminal_pagina_gerada.png" alt="">
+            <p>bom de um ctrl+c no terminal de ctrl+v no seu html e veja o resultado</p>
+        </div>
+    
+        <div class="testo-explicao">
+            <p>se quiser dar uma olhada no código que eu fiz</p>
+            <p>olhe no meu github</p>
+            <a href="https://github.com/GustavoGarciaPereira/automacao-em-pyhton/tree/master/exemplo" target="_blank" rel="noopener noreferrer">Link aqui</a>
+        </div>
+    
+    
+        <div class="testo-explicao">
+            <p>págima texte gerada <a href="teste.html" target="_blank" rel="noopener noreferrer">aqui</a></p>
+        </div>
+    
+    
+        <div class="testo-explicao">
+            <h3>Algumas consideração</h3>
+            <p>Claro que não vai ser gerado um html perfeito</p>
+            <p>mas no meu caso me ajudou a dar uma baita ajuda</p>
+            <p>depois só fui ajustando o html para deixar melhor e dar um acabamento</p>
+            <p>se quiser ler mais sobre o assunto, entre no linke do livro abaixo</p>
+            <p>ele da vários insights sobre como usar o python para automatizar tarefas simples! </p>
+            <br>
+            <br>
+            <p>espero que tenha gostado e vou melhor mais no próximo</p>
+            
+        </div>
+        <div class="anuncio">
+            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=BR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=gustavo12garc-20&marketplace=amazon&region=BR&placement=B075JTQYB7&asins=B075JTQYB7&linkId=e7315b4aec20b9242f4564501272709a&show_border=true&link_opens_in_new_window=true&price_color=344ee0&title_color=1d2e1c&bg_color=ffffff">
+            </iframe>
+        </div>
     </div>
+
+
 
 </body>
 </html>
